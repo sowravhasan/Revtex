@@ -54,7 +54,6 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.267);
     display: none;
-   
 }
 
 .popup-container {
@@ -84,6 +83,8 @@
     font-size: 18px;
     border-radius: 10px;
     font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .popup-main-container button a{
     text-decoration: none;
@@ -121,6 +122,29 @@
     50% {
         opacity: 1;
     }
+}
+@media only screen and (max-width: 600px) {
+
+.popup-container {
+    width: 90%;
+    height: 45%;
+}
+.popup-container button {
+    margin-top: 20px;
+}
+.popup-main-container h1{
+  margin-top: 35px;
+}
+}
+@media only screen and (min-width: 601px) and (max-width:1000px) {
+
+.popup-container {
+    width: 90%;
+    height: 35%;
+}
+.popup-container button {
+    margin-top: 20px;
+}
 }
   </style>
 </head>
@@ -209,6 +233,7 @@
       <h1>Thanks for submit this form !</h1>
      
       <button><a href="https://calendly.com/msettle1018/30min">Schedule a Time to Talk!</a></button>
+      <br>
       <button><a href="https://revtaxgroup2.github.io/THanks/">Anytime is Good for Me!</a></button>
       <i id="close-icon" class="fa-sharp fa-solid fa-xmark"></i>
     </div>
